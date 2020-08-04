@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7850 3200 1200 700 
+U 5F21D67F
+F0 "Sheet5F21D67E" 50
+F1 "target_interface.sch" 50
+$EndSheet
+$Sheet
+S 3650 3050 2700 1050
+U 5F25207D
+F0 "Sheet5F25207C" 50
+F1 "mcu.sch" 50
+$EndSheet
+$Comp
+L Regulator_Linear:LP2985-3.3 U101
+U 1 1 5F42AA55
+P 5250 1550
+F 0 "U101" H 5000 1775 50  0000 C CNN
+F 1 "LP2985-3.3" H 5200 1800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5250 1875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F42B067
+P 5250 1850
+F 0 "#PWR0104" H 5250 1600 50  0001 C CNN
+F 1 "GND" H 5250 1700 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C102
+U 1 1 5F42B588
+P 5750 1700
+F 0 "C102" H 5775 1800 50  0000 L CNN
+F 1 "TBD" H 5775 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 1550 50  0001 C CNN
+F 3 "~" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1550 5650 1550
+$Comp
+L power:GND #PWR0105
+U 1 1 5F42BA16
+P 5750 1850
+F 0 "#PWR0105" H 5750 1600 50  0001 C CNN
+F 1 "GND" H 5750 1700 50  0000 C CNN
+F 2 "" H 5750 1850 50  0001 C CNN
+F 3 "" H 5750 1850 50  0001 C CNN
+	1    5750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1550 4750 1550
+Wire Wire Line
+	4750 1550 4750 1450
+Wire Wire Line
+	4750 1450 4850 1450
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F42C346
+P 4750 1350
+F 0 "#PWR0101" H 4750 1200 50  0001 C CNN
+F 1 "+5V" H 4750 1490 50  0000 C CNN
+F 2 "" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1350 4750 1450
+Connection ~ 4750 1450
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5F42CC0D
+P 5750 1350
+F 0 "#PWR0102" H 5750 1200 50  0001 C CNN
+F 1 "+3V3" H 5750 1490 50  0000 C CNN
+F 2 "" H 5750 1350 50  0001 C CNN
+F 3 "" H 5750 1350 50  0001 C CNN
+	1    5750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1350 5750 1450
+Wire Wire Line
+	5750 1450 5650 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F42DA03
+P 4400 1350
+F 0 "#FLG0101" H 4400 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1500 50  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "~" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1350 4400 1450
+Wire Wire Line
+	4400 1450 4750 1450
+$Comp
+L Device:C C103
+U 1 1 5F483C75
+P 6200 1700
+F 0 "C103" H 6225 1800 50  0000 L CNN
+F 1 "1u" H 6225 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 1550 50  0001 C CNN
+F 3 "~" H 6200 1700 50  0001 C CNN
+	1    6200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F483FBC
+P 6200 1850
+F 0 "#PWR0106" H 6200 1600 50  0001 C CNN
+F 1 "GND" H 6200 1700 50  0000 C CNN
+F 2 "" H 6200 1850 50  0001 C CNN
+F 3 "" H 6200 1850 50  0001 C CNN
+	1    6200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1550 6200 1450
+Wire Wire Line
+	6200 1450 5750 1450
+Connection ~ 5750 1450
+$Comp
+L Device:C C101
+U 1 1 5F48509D
+P 4400 1700
+F 0 "C101" H 4425 1800 50  0000 L CNN
+F 1 "1u" H 4425 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1550 50  0001 C CNN
+F 3 "~" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F4850A3
+P 4400 1850
+F 0 "#PWR0103" H 4400 1600 50  0001 C CNN
+F 1 "GND" H 4400 1700 50  0000 C CNN
+F 2 "" H 4400 1850 50  0001 C CNN
+F 3 "" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1550 4400 1450
+Connection ~ 4400 1450
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5F19E2A2
+P 2500 5000
+F 0 "FID1" H 2585 5046 50  0000 L CNN
+F 1 "Fiducial" H 2585 4955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5000 50  0001 C CNN
+F 3 "~" H 2500 5000 50  0001 C CNN
+	1    2500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5F19E943
+P 2500 5250
+F 0 "FID2" H 2585 5296 50  0000 L CNN
+F 1 "Fiducial" H 2585 5205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5250 50  0001 C CNN
+F 3 "~" H 2500 5250 50  0001 C CNN
+	1    2500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5F21FF18
+P 2500 5500
+F 0 "FID3" H 2585 5546 50  0000 L CNN
+F 1 "Fiducial" H 2585 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5500 50  0001 C CNN
+F 3 "~" H 2500 5500 50  0001 C CNN
+	1    2500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5F220B5C
+P 3500 5000
+F 0 "FID4" H 3585 5046 50  0000 L CNN
+F 1 "Fiducial" H 3585 4955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5000 50  0001 C CNN
+F 3 "~" H 3500 5000 50  0001 C CNN
+	1    3500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID5
+U 1 1 5F220B62
+P 3500 5250
+F 0 "FID5" H 3585 5296 50  0000 L CNN
+F 1 "Fiducial" H 3585 5205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5250 50  0001 C CNN
+F 3 "~" H 3500 5250 50  0001 C CNN
+	1    3500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID6
+U 1 1 5F220B68
+P 3500 5500
+F 0 "FID6" H 3585 5546 50  0000 L CNN
+F 1 "Fiducial" H 3585 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5500 50  0001 C CNN
+F 3 "~" H 3500 5500 50  0001 C CNN
+	1    3500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F2A39DC
+P 2500 6000
+F 0 "H1" H 2600 6046 50  0000 L CNN
+F 1 "MountingHole" H 2600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 2500 6000 50  0001 C CNN
+F 3 "~" H 2500 6000 50  0001 C CNN
+	1    2500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F2A6C32
+P 2500 6200
+F 0 "H2" H 2600 6246 50  0000 L CNN
+F 1 "MountingHole" H 2600 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 2500 6200 50  0001 C CNN
+F 3 "~" H 2500 6200 50  0001 C CNN
+	1    2500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F2A75CA
+P 3500 6000
+F 0 "H3" H 3600 6046 50  0000 L CNN
+F 1 "MountingHole" H 3600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 3500 6000 50  0001 C CNN
+F 3 "~" H 3500 6000 50  0001 C CNN
+	1    3500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F2A75D0
+P 3500 6200
+F 0 "H4" H 3600 6246 50  0000 L CNN
+F 1 "MountingHole" H 3600 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 3500 6200 50  0001 C CNN
+F 3 "~" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
